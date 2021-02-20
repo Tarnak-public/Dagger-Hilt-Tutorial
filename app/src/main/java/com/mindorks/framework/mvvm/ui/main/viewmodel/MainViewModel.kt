@@ -1,14 +1,20 @@
 package com.mindorks.framework.mvvm.ui.main.viewmodel
 
-import androidx.hilt.lifecycle.ViewModelInject
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.mindorks.framework.mvvm.data.model.User
 import com.mindorks.framework.mvvm.data.repository.MainRepository
 import com.mindorks.framework.mvvm.utils.NetworkHelper
 import com.mindorks.framework.mvvm.utils.Resource
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class MainViewModel @ViewModelInject constructor(
+
+@HiltViewModel
+class MainViewModel @Inject constructor(
     private val mainRepository: MainRepository,
     private val networkHelper: NetworkHelper
 ) : ViewModel() {
