@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvvm.di.module
+package com.mindorks.framework.mvvm.presentation.di.module
 
 import androidx.fragment.app.Fragment
 import dagger.MapKey

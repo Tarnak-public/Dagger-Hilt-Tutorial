@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvvm.ui.factory
+package com.mindorks.framework.mvvm.presentation.ui.factory
 
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn

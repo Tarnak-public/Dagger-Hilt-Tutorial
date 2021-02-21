@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvvm.ui.main.view
+package com.mindorks.framework.mvvm.presentation.ui.main.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.mindorks.framework.mvvm.R
 import com.mindorks.framework.mvvm.data.model.User
 import com.mindorks.framework.mvvm.databinding.ExampleApiShowFragmentBinding
-import com.mindorks.framework.mvvm.ui.main.adapter.MainAdapter
-import com.mindorks.framework.mvvm.ui.main.viewmodel.ExampleApiShowViewModel
+import com.mindorks.framework.mvvm.presentation.ui.main.adapter.MainAdapter
+import com.mindorks.framework.mvvm.presentation.ui.main.viewmodel.ExampleApiShowViewModel
 import com.mindorks.framework.mvvm.utils.Status
 import dagger.hilt.android.AndroidEntryPoint
 import io.supercharge.fragmentfactoryandhilt.base.BaseFragment

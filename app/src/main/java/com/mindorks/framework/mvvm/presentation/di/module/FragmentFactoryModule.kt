@@ -1,7 +1,7 @@
-package com.mindorks.framework.mvvm.di.module
+package com.mindorks.framework.mvvm.presentation.di.module
 
 import androidx.fragment.app.Fragment
-import com.mindorks.framework.mvvm.ui.main.view.ExampleApiShowFragment
+import com.mindorks.framework.mvvm.presentation.ui.main.view.ExampleApiShowFragment
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

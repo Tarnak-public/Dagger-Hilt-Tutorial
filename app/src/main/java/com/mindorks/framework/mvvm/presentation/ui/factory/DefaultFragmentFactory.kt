@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvvm.ui.factory
+package com.mindorks.framework.mvvm.presentation.ui.factory
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory

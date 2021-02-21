@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvvm.ui.main.adapter
+package com.mindorks.framework.mvvm.presentation.ui.main.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

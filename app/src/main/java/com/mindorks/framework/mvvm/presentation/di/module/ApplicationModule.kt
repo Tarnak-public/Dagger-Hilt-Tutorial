@@ -1,4 +1,4 @@
-package com.mindorks.framework.mvvm.di.module
+package com.mindorks.framework.mvvm.presentation.di.module
 
 import com.mindorks.framework.mvvm.BuildConfig
 import com.mindorks.framework.mvvm.data.api.ApiHelper
