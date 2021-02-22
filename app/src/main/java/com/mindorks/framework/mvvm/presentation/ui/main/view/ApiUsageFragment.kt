@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mindorks.framework.mvvm.R
 import com.mindorks.framework.mvvm.data.model.User
-import com.mindorks.framework.mvvm.databinding.ExampleApiShowFragmentBinding
+import com.mindorks.framework.mvvm.databinding.FragmentApiUsageBinding
 import com.mindorks.framework.mvvm.presentation.ui.main.adapter.MainAdapter
-import com.mindorks.framework.mvvm.presentation.ui.main.viewmodel.ExampleApiShowViewModel
+import com.mindorks.framework.mvvm.presentation.ui.main.viewmodel.ApiUsageViewModel
 import com.mindorks.framework.mvvm.utils.Status
 import dagger.hilt.android.AndroidEntryPoint
 import io.supercharge.fragmentfactoryandhilt.base.BaseFragment
@@ -20,19 +20,19 @@ import io.supercharge.fragmentfactoryandhilt.navigator.Navigator
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class ExampleApiShowFragment @Inject constructor(
+class ApiUsageFragment @Inject constructor(
     val navigator: Navigator
 ) : BaseFragment() {
-    private lateinit var binding: ExampleApiShowFragmentBinding
-    private val viewModel: ExampleApiShowViewModel by viewModels()
-    override val layoutId: Int = R.layout.example_api_show_fragment
+    private lateinit var binding: FragmentApiUsageBinding
+    private val viewModel: ApiUsageViewModel by viewModels()
+    override val layoutId: Int = R.layout.fragment_api_usage
     private lateinit var adapter: MainAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = ExampleApiShowFragmentBinding.inflate(layoutInflater, container, false)
+        binding = FragmentApiUsageBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
 
@@ -41,13 +41,7 @@ class ExampleApiShowFragment @Inject constructor(
 
         setupUI()
         setupObserver()
-
-//        openSecondScreen.setOnClickListener {
-//            navigator.navigate(R.id.navDirectionSecondScreen)
-//        }
-//        viewModel.method()
     }
-
 
     private fun setupUI() {
         with(binding) {

@@ -13,7 +13,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class ExampleApiShowViewModel @Inject constructor(
+class ApiUsageViewModel @Inject constructor(
     private val apiRepository: ApiRepository,
     private val networkHelper: NetworkHelper
 ) : BaseViewModel() {

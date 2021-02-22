@@ -2,15 +2,39 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navigation_main"
-    app:startDestination="@id/navDirectionFirstScreen">
+    app:startDestination="@id/StudentInfoListFragment">
 
     <fragment
-        android:id="@+id/navDirectionFirstScreen"
-        android:name="com.mindorks.framework.mvvm.presentation.ui.main.view.ExampleApiShowFragment">
+        android:id="@+id/navDirectionApi"
+        android:name="com.mindorks.framework.mvvm.presentation.ui.main.view.ApiUsageFragment">
 
-<!--        <action-->
-<!--            android:id="@id/navDirectionSecondScreen"-->
-<!--            app:destination="@id/navDirectionSecondScreen" />-->
+        <action
+            android:id="@+id/action_navDirectionApi_to_navDirectionRooms"
+            app:destination="@id/StudentInfoFragment" />
+    </fragment>
 
+    <fragment
+        android:id="@+id/StudentInfoFragment"
+        android:name="com.mindorks.framework.mvvm.presentation.ui.main.view.StudentInfoFragment">
+        <action
+            android:id="@+id/action_StudentInfoFragment_to_StudentInfoListFragment"
+            app:destination="@id/StudentInfoListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/StudentInfoListFragment"
+        android:name="com.mindorks.framework.mvvm.presentation.ui.main.view.StudentInfoListFragment">
+        <action
+            android:id="@+id/action_StudentInfoListFragment_to_StudentInfoFragment"
+            app:destination="@id/StudentInfoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navDirectionEmpty"
+        android:name="com.mindorks.framework.mvvm.presentation.ui.main.view.EmptyFragment">
+
+        <action
+            android:id="@+id/action_navDirectionEmpty_to_navDirectionRooms"
+            app:destination="@id/StudentInfoFragment" />
     </fragment>
 </navigation>

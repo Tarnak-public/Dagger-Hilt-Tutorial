@@ -21,6 +21,9 @@ https://medium.com/supercharges-mobile-product-guide/fragmentfactory-with-dagger
 
 clean architecture:
 https://proandroiddev.com/kotlin-clean-architecture-1ad42fcd97fa
+
+clean architecture better described
+https://antonioleiva.com/clean-architecture-android/
  */
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
